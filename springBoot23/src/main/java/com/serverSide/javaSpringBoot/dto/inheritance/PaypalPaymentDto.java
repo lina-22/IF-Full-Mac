@@ -1,0 +1,21 @@
+package com.serverSide.javaSpringBoot.dto.inheritance;
+
+import com.serverSide.javaSpringBoot.model.PaymentModel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PaypalPaymentDto extends PaymentModel {
+    private String accountEmail;
+    private BigDecimal amount;
+    private Date paymentDate;
+    private String details;
+    private long reservationId;
+}
+
